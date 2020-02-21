@@ -37,7 +37,7 @@
 
 </head>
 
-<body>
+<body style="direction: rtl">
     <!-- Navigation
     ==========================================-->
     <nav id="menu" class="navbar navbar-default navbar-fixed-top">
