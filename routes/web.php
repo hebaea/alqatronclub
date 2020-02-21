@@ -1,9 +1,10 @@
 <?php
 
 use App\Mail\ContactMail;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 
 Route::get('/', function () {
     return view('pages\index');
@@ -22,3 +23,7 @@ Route::get('/', function () {
 // Route::get('/','ContactusController@index');
 // Route::post('/','ContactusController@create');
 Route::post('/','ContactusController@send')->name('sendMessage');
+Route::get('/clear-cache', function() {
+    Artisan::call('cache:clear');
+    return "Cache is cleared";
+});
