@@ -14,11 +14,11 @@ $(document).ready(function() {
         "use strict";
         var maxText = $('textarea').attr('maxlength'),
             ourMessage = $('.message');
-        ourMessage.html('<span>' + maxText + '</span> characters remaining.');
+        ourMessage.html('<span>' + maxText + '</span> حرف متبق.');
         $('textarea').keyup(function() {
             var textLength = $(this).val().length,
                 remChars = maxText - textLength;
-            ourMessage.html('<span>' + remChars + '</span> characters remaining.');
+            ourMessage.html('<span>' + remChars + '</span> حرف متبق.');
         });
     });
 

@@ -23,6 +23,7 @@ Route::get('/', function () {
 // Route::get('/','ContactusController@index');
 // Route::post('/','ContactusController@create');
 Route::post('/','ContactusController@send')->name('sendMessage');
+// clear cache
 Route::get('/clear-cache', function() {
     Artisan::call('cache:clear');
     return "Cache is cleared";

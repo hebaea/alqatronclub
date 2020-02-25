@@ -17,7 +17,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cairo&display=swap">
 
     <!-- Slider
     ================================================== -->
@@ -30,8 +30,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
 
@@ -57,12 +55,12 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{  url('/') }}" class="page-scroll">الرئيسية</a></li>
-                    <li><a href="{{  url('/#about-section') }}" class="page-scroll">حولنا</a></li>
-                    <li><a href="{{ url('/#services-section') }}" class="page-scroll">أهدافنا</a></li>
-                    <li><a href="{{ url('/#works-section') }}" class="page-scroll">أنشطتنا</a></li>
-                    <li><a href="{{ url('/#team-section') }}" class="page-scroll">الفريق</a></li>
                     <li><a href="{{ url('/#testimonials-section') }}" class="page-scroll">اتصل بنا</a></li>
+                    <li><a href="{{ url('/#team-section') }}" class="page-scroll">الفريق</a></li>
+                    <li><a href="{{ url('/#works-section') }}" class="page-scroll">أنشطتنا</a></li>
+                    <li><a href="{{ url('/#services-section') }}" class="page-scroll">أهدافنا</a></li>
+                    <li><a href="{{  url('/#about-section') }}" class="page-scroll">حولنا</a></li>
+                    <li><a href="{{  url('/') }}" class="page-scroll">الرئيسية</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -73,7 +71,7 @@
     <!-- Header -->
     <header name="home">
         <!-- class="text-center" -->
-        <div class="intro-text">
+        <div class="intro-text" style="margin-right: 550px">
             <h1>مرحبا بك في <span class="color">نادي القطرون</span></h1>
             <p> للحوار و المناظرة</p>
             <div class="clearfix"></div>
@@ -208,7 +206,7 @@
                 <div class="space"></div>
                 <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>Qdc.ly18@gmail.com</p>
                 <div class="space"></div>
-                <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+218 92 8508308</p>
+                <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i> </p>
             </div>
             <div class="col-md-8">
                 <p dir="rtl">إن كان لديك أي استفسار أو فقط تود مراسلتنا أو الأتصال بنا لا تتردد</p>
@@ -280,7 +278,7 @@
     <div id="footer">
         <div class="container">
             <center>
-                <p>Copyright &copy; 2020 </p>
+                <p> &copy نادي القطرون للحوار و المناظرة 2020 </p>
             </center>
         </div>
     </div>

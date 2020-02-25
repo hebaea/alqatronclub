@@ -1,5 +1,5 @@
 html {
-    font-family: sans-serif;
+    font-family: 'Cairo', ;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -121,7 +121,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, monospace;
+    font-family: 'Cairo', ;
     font-size: 1em;
 }
 
@@ -297,16 +297,15 @@ th {
 }
 
 @font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url('../fonts/glyphicons-halflings-regular.eot');
-    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    font-family: 'Cairo', ;
+    src: url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
 }
 
 .glyphicon {
     position: relative;
     top: 1px;
     display: inline-block;
-    font-family: 'Glyphicons Halflings';
+    font-family: 'Cairo', ;
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -1366,7 +1365,7 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Cairo', ;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -1884,7 +1883,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: 'Cairo', ;
 }
 
 code {
@@ -4235,12 +4234,12 @@ tbody.collapse.in {
 
 @media (min-width: 768px) {
     .navbar-right .dropdown-menu {
-        left: 0;
-        right: auto;
+        right: 0;
+        left: auto;
     }
     .navbar-right .dropdown-menu-left {
-        left: auto;
-        right: 0;
+        right: auto;
+        left: 0;
     }
 }
 
@@ -4310,7 +4309,7 @@ tbody.collapse.in {
 }
 
 .btn-group>.btn-group {
-    float: right;
+    float: left;
 }
 
 .btn-group>.btn-group:not(:first-child):not(:last-child)>.btn {
@@ -4464,7 +4463,7 @@ tbody.collapse.in {
 .input-group .form-control {
     position: relative;
     z-index: 2;
-    float: right;
+    float: left;
     width: 100%;
     margin-bottom: 0;
 }
@@ -4610,7 +4609,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .input-group-btn>.btn+.btn {
-    margin-right: -1px;
+    margin-left: -1px;
 }
 
 .input-group-btn>.btn:hover,
@@ -4621,16 +4620,16 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .input-group-btn:first-child>.btn,
 .input-group-btn:first-child>.btn-group {
-    margin-left: -1px;
+    margin-right: -1px;
 }
 
 .input-group-btn:last-child>.btn,
 .input-group-btn:last-child>.btn-group {
-    margin-right: -1px;
+    margin-left: -1px;
 }
 
 .nav {
-    padding-right: 0;
+    padding-left: 0;
     margin-bottom: 0;
     list-style: none;
 }
@@ -4687,12 +4686,12 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .nav-tabs>li {
-    float: right;
+    float: left;
     margin-bottom: -1px;
 }
 
 .nav-tabs>li>a {
-    margin-left: 2px;
+    margin-right: 2px;
     line-height: 1.42857143;
     border: 1px solid transparent;
     border-radius: 4px 4px 0 0;
@@ -4742,7 +4741,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .nav-tabs.nav-justified>li>a {
-    margin-left: 0;
+    margin-right: 0;
     border-radius: 4px;
 }
 
@@ -4765,7 +4764,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .nav-pills>li {
-    float: right;
+    float: left;
 }
 
 .nav-pills>li>a {
@@ -4789,7 +4788,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .nav-stacked>li+li {
     margin-top: 2px;
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .nav-justified {
@@ -4825,7 +4824,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .nav-tabs-justified>li>a {
-    margin-left: 0;
+    margin-right: 0;
     border-radius: 4px;
 }
 
@@ -4878,7 +4877,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 @media (min-width: 768px) {
     .navbar-header {
-        float: right;
+        float: left;
     }
 }
 
@@ -5014,7 +5013,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .navbar-toggle {
     position: relative;
-    float: left;
+    float: right;
     padding: 9px 10px;
     margin-top: 8px;
     margin-left: 15px;
@@ -5082,11 +5081,11 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 @media (min-width: 768px) {
     .navbar-nav {
-        float: right;
+        float: left;
         margin: 0;
     }
     .navbar-nav>li {
-        float: right;
+        float: left;
     }
     .navbar-nav>li>a {
         padding-top: 15px;
@@ -5145,12 +5144,12 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
     }
     .navbar-form .radio label,
     .navbar-form .checkbox label {
-        padding-right: 0;
+        padding-left: 0;
     }
     .navbar-form .radio input[type="radio"],
     .navbar-form .checkbox input[type="checkbox"] {
         position: relative;
-        margin-right: 0;
+        margin-left: 0;
     }
     .navbar-form .has-feedback .form-control-feedback {
         top: 0;
@@ -5215,22 +5214,22 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 @media (min-width: 768px) {
     .navbar-text {
-        float: right;
-        margin-left: 15px;
+        float: left;
         margin-right: 15px;
+        margin-left: 15px;
     }
 }
 
 @media (min-width: 768px) {
     .navbar-left {
-        float: right !important;
+        float: left !important;
     }
     .navbar-right {
-        float: left !important;
-        margin-left: -15px;
+        float: right !important;
+        margin-right: -15px;
     }
     .navbar-left~.navbar-right {
-        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -5778,7 +5777,7 @@ a.badge:focus {
 }
 
 .nav-pills>li>a>.badge {
-    margin-right: 3px;
+    margin-left: 3px;
 }
 
 .jumbotron {
@@ -6960,7 +6959,7 @@ button.close {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Cairo', ;
     font-size: 12px;
     font-weight: normal;
     line-height: 1.4;
@@ -7084,7 +7083,7 @@ button.close {
     display: none;
     max-width: 276px;
     padding: 1px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Cairo', ;
     font-size: 14px;
     font-weight: normal;
     line-height: 1.42857143;
@@ -7379,7 +7378,7 @@ button.close {
     width: 20px;
     height: 20px;
     margin-top: -10px;
-    font-family: serif;
+    font-family: 'Cairo', ;
     line-height: 1;
 }
 

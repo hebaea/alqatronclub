@@ -23,7 +23,7 @@ public function send(Request $request){
                   'name'  => $request->name,
                   'message'  => $request->message);
 
-    Mail::to('haboshaabdo@gmail.com')->send(new ContactMail($data));
+    Mail::to('hebaelosta98@gmail.com')->send(new ContactMail($data));
     return back()->with('success','Thank you for Contacting us!');
 
   }

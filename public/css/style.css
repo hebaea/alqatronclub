@@ -1,6 +1,6 @@
 body,
 html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cairo', ;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     color: #333;
@@ -32,7 +32,7 @@ h5 {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cairo', ;
     color: #888;
     line-height: 24px;
     font-size: 18px;
@@ -189,7 +189,7 @@ header p {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 170px;
-    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .intro-text H1 {
@@ -202,12 +202,12 @@ header p {
 .color {
     color: #75c7fb;
     font-weight: 700;
-    text-shadow: -5px 0 5px #fff;
+    text-shadow: -2px 0 2px #fff;
 }
 
 .btn-default {
     color: #333;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cairo', ;
     background-color: rgba(255, 255, 255, 0.8);
     border: 0;
     margin: 0 8px;
@@ -220,7 +220,7 @@ header p {
 .btn-default.focus,
 .btn-default:active,
 .btn-default.active {
-    background-color: #75c7fb;
+    background-color: rgba(255, 255, 255, 0.4);
     color: #fff;
 }
 
@@ -631,7 +631,7 @@ ol.type li a:hover {
 label {
     font-size: 12px;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cairo', ;
     float: right;
 }
 
