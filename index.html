@@ -17,7 +17,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cairo&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cairo&display=swap">
 
     <!-- Slider
     ================================================== -->
@@ -49,20 +49,20 @@
       <span class="icon-bar"></span>
        <span class="icon-bar"></span>
        <span class="icon-bar"></span> </button>
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('img/logo.jpg') }}" class="hidden-xs" alt="نادي القطرون">
+                <a class="navbar-brand" href="">
+                    <img src="img/logo.jpg" class="hidden-xs" alt="نادي القطرون">
                     <h3 class="visible-xs">نادي القطرون</h3>
                 </a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{ url('/#testimonials-section') }}" class="page-scroll">اتصل بنا</a></li>
-                    <li><a href="{{ url('/#team-section') }}" class="page-scroll">الفريق</a></li>
-                    <li><a href="{{ url('/#works-section') }}" class="page-scroll">أنشطتنا</a></li>
-                    <li><a href="{{ url('/#services-section') }}" class="page-scroll">أهدافنا</a></li>
-                    <li><a href="{{  url('/#about-section') }}" class="page-scroll">حولنا</a></li>
-                    <li><a href="{{  url('/') }}" class="page-scroll">الرئيسية</a></li>
+                    <li><a href="#contact-section" class="page-scroll">اتصل بنا</a></li>
+                    <li><a href="#team-section" class="page-scroll">الفريق</a></li>
+                    <li><a href="#works-section" class="page-scroll">أنشطتنا</a></li>
+                    <li><a href="#services-section" class="page-scroll">أهدافنا</a></li>
+                    <li><a href="#about-section" class="page-scroll">حولنا</a></li>
+                    <li><a href="#" class="page-scroll">الرئيسية</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -194,7 +194,7 @@
         </div>
     </div>
     <!-- Contact Section -->
-    <div id="testimonials-section">
+    <div id="contact-section">
         <div class="container">
             <div class="section-title">
                 <h2 dir="rtl"><strong>اتصل بنا</strong></h2>
@@ -211,54 +211,10 @@
                 <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i> </p>
             </div>
             <div class="col-md-8">
-                <p dir="rtl">إن كان لديك أي استفسار أو فقط تود مراسلتنا أو الأتصال بنا لا تتردد</p>
 
-                @if(count($errors)>0)
-                <div class="alert alert-danger">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                        <li>* {{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-                @endif
-                @if($message = Session::get('success'))
-                <div class="alert alert-success">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <p>{{ $message }}</p>
-                </div>
-                @endif
 
-                <form action="{{route('sendMessage')}}" method="post" name="sentMessage" id="contactForm">
-                    @csrf
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" name="name" id="name" class="form-control" placeholder="الاسم">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="بريدك الإلكتروني">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- calculate text area -->
-                    <div class="form-group">
-                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="اكتب رسالتك هنا" maxlength="300"></textarea>
-                        <div class="message"></div>
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div id="success"></div>
-                    <button type="submit" value="ارسل" class="btn btn-default">ارسل</button>
-                </form>
+
+
 
             </div>
         </div>
@@ -267,7 +223,7 @@
         <div class="container">
             <div class="social">
                 <ul>
-                    <li><a href="{{ url('https://www.facebook.com/QDC.LY/') }}"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.facebook.com/QDC.LY/"><i class="fa fa-facebook"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -296,7 +252,6 @@
 
     <script type="text/javascript" src="js/contact_me.js"></script>
     <script type="text/javascript" src="js/owl.carousel.js"></script>
-
 
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/homeScript.js" type="text/javascript"></script>
