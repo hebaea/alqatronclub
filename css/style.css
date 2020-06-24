@@ -1,6 +1,6 @@
 body,
 html {
-    font-family: 'Cairo', ;
+    font-family: 'Tajawal', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     color: #333;
@@ -32,7 +32,7 @@ h5 {
 }
 
 p {
-    font-family: 'Cairo', ;
+    font-family: 'Tajawal', sans-serif;
     color: #888;
     line-height: 24px;
     font-size: 18px;
@@ -193,7 +193,7 @@ header p {
 }
 
 .intro-text H1 {
-    font-size: 60px;
+    font-size: 40px;
     text-transform: uppercase;
     color: #fff;
     font-weight: 300;
@@ -207,7 +207,7 @@ header p {
 
 .btn-default {
     color: #333;
-    font-family: 'Cairo', ;
+    font-family: 'Tajawal', sans-serif;
     background-color: rgba(255, 255, 255, 0.8);
     border: 0;
     margin: 0 8px;
@@ -631,7 +631,7 @@ ol.type li a:hover {
 label {
     font-size: 12px;
     font-weight: 400;
-    font-family: 'Cairo', ;
+    font-family: 'Tajawal', sans-serif;
     float: right;
 }
 
